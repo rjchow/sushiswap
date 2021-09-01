@@ -88,7 +88,7 @@ const config: HardhatUserConfig = {
     },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
-      accounts,
+      accounts: [ process.env.ACCOUNT_1, process.env.ACCOUNT_2 ],
       chainId: 4,
       live: true,
       saveDeployments: true,
